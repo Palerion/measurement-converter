@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MeasurementConverter.css";
 
 const converter = {
@@ -54,15 +54,46 @@ const MeasurementConverter = () => {
   const [outputUnit, setOutputUnit] = useState("ft");
 
   const handleConvert = (e) => {
+    console.log(measurementType);
+    console.log(inputUnit);
+    console.log(outputUnit);
     e.preventDefault();
     if (!isNaN(input)) {
-      setOutput(
-        converter[measurementType][inputUnit][outputUnit](
-          parseFloat(input)
-        ).toFixed(2)
-      );
+      try {
+        const conversionFunction =
+          converter[measurementType][inputUnit][outputUnit];
+        if (typeof conversionFunction === "function") {
+          setOutput(conversionFunction(parseFloat(input)).toFixed(2));
+        } else {
+          throw new Error(
+            `Conversion from ${inputUnit} to ${outputUnit} is not defined`
+          );
+        }
+      } catch (error) {
+        console.error(error);
+        // You could set an error message to be displayed in the UI here
+      }
     }
   };
+
+  useEffect(() => {
+    switch (measurementType) {
+      case "length":
+        setInputUnit("m");
+        setOutputUnit("ft");
+        break;
+      case "area":
+        setInputUnit("sqm");
+        setOutputUnit("sqft");
+        break;
+      case "volume":
+        setInputUnit("cum");
+        setOutputUnit("cuft");
+        break;
+      default:
+        console.error("Unknown measurement type:", measurementType);
+    }
+  }, [measurementType]);
 
   return (
     <div className="MeasurementConverter">
@@ -86,21 +117,45 @@ const MeasurementConverter = () => {
           value={inputUnit}
           onChange={(e) => setInputUnit(e.target.value)}
         >
-          <option value="m">
+          <option
+            value={
+              measurementType === "length"
+                ? "m"
+                : measurementType === "area"
+                ? "sqm"
+                : "cum"
+            }
+          >
             {measurementType === "length"
               ? "Meters"
               : measurementType === "area"
               ? "Square Meters"
               : "Cubic Meters"}
           </option>
-          <option value="ft">
+          <option
+            value={
+              measurementType === "length"
+                ? "ft"
+                : measurementType === "area"
+                ? "sqft"
+                : "cuft"
+            }
+          >
             {measurementType === "length"
               ? "Feet"
               : measurementType === "area"
               ? "Square Feet"
               : "Cubic Feet"}
           </option>
-          <option value="yd">
+          <option
+            value={
+              measurementType === "length"
+                ? "yd"
+                : measurementType === "area"
+                ? "sqyd"
+                : "cuyd"
+            }
+          >
             {measurementType === "length"
               ? "Yards"
               : measurementType === "area"
@@ -113,21 +168,45 @@ const MeasurementConverter = () => {
           value={outputUnit}
           onChange={(e) => setOutputUnit(e.target.value)}
         >
-          <option value="m">
+          <option
+            value={
+              measurementType === "length"
+                ? "m"
+                : measurementType === "area"
+                ? "sqm"
+                : "cum"
+            }
+          >
             {measurementType === "length"
               ? "Meters"
               : measurementType === "area"
               ? "Square Meters"
               : "Cubic Meters"}
           </option>
-          <option value="ft">
+          <option
+            value={
+              measurementType === "length"
+                ? "ft"
+                : measurementType === "area"
+                ? "sqft"
+                : "cuft"
+            }
+          >
             {measurementType === "length"
               ? "Feet"
               : measurementType === "area"
               ? "Square Feet"
               : "Cubic Feet"}
           </option>
-          <option value="yd">
+          <option
+            value={
+              measurementType === "length"
+                ? "yd"
+                : measurementType === "area"
+                ? "sqyd"
+                : "cuyd"
+            }
+          >
             {measurementType === "length"
               ? "Yards"
               : measurementType === "area"

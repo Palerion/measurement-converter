@@ -1,0 +1,11 @@
+"filename", "language", "CSS", "JavaScript", "XML", "comment", "blank", "total"
+"c:\Windows\System32\weaccelerate\measurement-converter\src\App.js", "JavaScript", 0, 10, 0, 0, 3, 13
+"c:\Windows\System32\weaccelerate\measurement-converter\src\App.test.js", "JavaScript", 0, 7, 0, 0, 2, 9
+"c:\Windows\System32\weaccelerate\measurement-converter\src\MeasurementConverter.css", "CSS", 52, 0, 0, 0, 9, 61
+"c:\Windows\System32\weaccelerate\measurement-converter\src\MeasurementConverter.js", "JavaScript", 0, 142, 0, 0, 6, 148
+"c:\Windows\System32\weaccelerate\measurement-converter\src\index.css", "CSS", 12, 0, 0, 0, 2, 14
+"c:\Windows\System32\weaccelerate\measurement-converter\src\index.js", "JavaScript", 0, 12, 0, 3, 3, 18
+"c:\Windows\System32\weaccelerate\measurement-converter\src\logo.svg", "XML", 0, 0, 1, 0, 0, 1
+"c:\Windows\System32\weaccelerate\measurement-converter\src\reportWebVitals.js", "JavaScript", 0, 12, 0, 0, 2, 14
+"c:\Windows\System32\weaccelerate\measurement-converter\src\setupTests.js", "JavaScript", 0, 1, 0, 4, 1, 6
+"Total", "-", 64, 184, 1, 7, 28, 284

@@ -1,0 +1,35 @@
+Date : 2023-08-05 01:11:05
+Directory : c:\Windows\System32\weaccelerate\measurement-converter\src
+Total : 9 files,  326 codes, 8 comments, 29 blanks, all 363 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          6 |        261 |          8 |         18 |        287 |
+| CSS        |          2 |         64 |          0 |         11 |         75 |
+| XML        |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                   |          9 |        326 |          8 |         29 |        363 |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                            | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Windows\System32\weaccelerate\measurement-converter\src\App.js                   | JavaScript |         10 |          0 |          3 |         13 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\App.test.js              | JavaScript |          7 |          0 |          2 |          9 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\MeasurementConverter.css | CSS        |         52 |          0 |          9 |         61 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\MeasurementConverter.js  | JavaScript |        219 |          1 |          7 |        227 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\index.css                | CSS        |         12 |          0 |          2 |         14 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\index.js                 | JavaScript |         12 |          3 |          3 |         18 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\logo.svg                 | XML        |          1 |          0 |          0 |          1 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\reportWebVitals.js       | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Windows\System32\weaccelerate\measurement-converter\src\setupTests.js            | JavaScript |          1 |          4 |          1 |          6 |
+| Total                                                                               |            |        326 |          8 |         29 |        363 |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
